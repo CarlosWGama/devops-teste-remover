@@ -22,4 +22,11 @@ jobs:
         needs: teste
         runs-on: ubuntu-latest
         steps:
-            - run: echo "REALIZANDO O DEPLOY"
+            - uses: actions/checkout@v3
+            - run: git fetch 
+            - run: git config --global user.email "carloswgama@gmail.com"
+            - run: git config --global user.name "Carlos W. Gama"
+            - run: git checkout -B gh-pages
+            - run: git merge main
+            - run: git push --force origin gh-pages
+            
