@@ -11,6 +11,7 @@ jobs:
     teste:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v3
             - run: npm install
             - run: npm test
             
@@ -18,6 +19,7 @@ jobs:
 
     #Subindo nosso código no Github Pages
     deploy:
+        needs: teste
         runs-on: ubuntu-latest
         steps:
             - run: echo "REALIZANDO O DEPLOY"
