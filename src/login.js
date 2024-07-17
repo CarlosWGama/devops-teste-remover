@@ -1,4 +1,4 @@
-function doLogin (email, password) {
+function doLogin (email, senha) {
     const emails = ['teste@teste.com', 'admin@teste.com'];
     if (emails.includes(email) && password == '123456') 
         return true;
