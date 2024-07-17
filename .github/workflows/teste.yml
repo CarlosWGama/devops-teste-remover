@@ -19,6 +19,8 @@ jobs:
 
     #Subindo nosso código no Github Pages
     deploy:
+        permissions: 
+            contents: write
         needs: teste
         runs-on: ubuntu-latest
         steps:
