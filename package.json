@@ -1,0 +1,22 @@
+{
+  "name": "devops",
+  "version": "1.0.0",
+  "description": "Usando: \r ```\r     git clone https://github.com/CarlosWGama/devops-simples.git \r     cd devops-simples\r     git checkout tag-aula\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosWGama/devops-simples.git"
+  },
+  "author": "Carlos W. Gama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlosWGama/devops-simples/issues"
+  },
+  "homepage": "https://github.com/CarlosWGama/devops-simples#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
