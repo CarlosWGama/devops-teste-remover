@@ -11,7 +11,8 @@ jobs:
     teste:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "REALIZANDO TESTE!"
+            - run: npm install
+            - run: npm test
             
 
 
